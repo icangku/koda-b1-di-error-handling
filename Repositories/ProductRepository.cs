@@ -59,7 +59,7 @@ public sealed class ProductRepository : IProductRepository
   public async Task<IReadOnlyList<Product>> GetAll(CancellationToken cancellationToken)
   {
     const string sql = """
-      SELECT Code, Name, Price, Stock, Category
+      SELECT Code, Name, Price, Stock, Category, CustomerId
       FROM dbo.Product
       ORDER BY Code DESC;
     """;
@@ -79,7 +79,7 @@ public sealed class ProductRepository : IProductRepository
   public async Task<Product?> GetByCode(string code, CancellationToken cancellationToken)
   {
     const string sql = """
-      SELECT Code, Name, Price, Stock, Category FROM dbo.Product WHERE Code = @code;
+      SELECT Code, Name, Price, Stock, Category, CustomerId FROM dbo.Product WHERE Code = @code;
     """;
 
     await using var connection = new SqlConnection(_connectionString);
@@ -165,22 +165,16 @@ public sealed class ProductRepository : IProductRepository
 
   private static Product ReadProduct(SqlDataReader reader)
   {
+    var customerId = reader.IsDBNull(5) ? 0 : Convert.ToInt32(reader.GetValue(5));
+
     return new Product(
       reader.GetString(0),
       reader.GetString(1),
       reader.GetDecimal(2),
       reader.GetInt32(3),
       reader.GetString(4),
-      reader.GetInt16(5)
-    )
-    {
-      Code = reader.GetString(0),
-      Name = reader.GetString(1),
-      Price = reader.GetDecimal(2),
-      Stock = reader.GetInt32(3),
-      Category = reader.GetString(4),
-      CustomerId = reader.GetInt16(5)
-    };
+      customerId
+    );
   }
 
   private static CustomerProductResponse ReadProductDto(SqlDataReader reader)

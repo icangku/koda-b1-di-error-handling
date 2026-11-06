@@ -281,6 +281,22 @@
           }
         }
       },
+      "Scalar.AspNetCore/2.19.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "System.Configuration.ConfigurationManager/9.0.18": {
         "type": "package",
         "dependencies": {
@@ -715,6 +731,25 @@
         "microsoft.sqlserver.server.nuspec"
       ]
     },
+    "Scalar.AspNetCore/2.19.0": {
+      "sha512": "nTXL9wsg6UhQ27KPUhuMr3/BE02H3zjuii2I5x7vbx7myPHkJzvzGDj7hfd1lKZBmJgUcKI+W7wcIzDdV/N/Dg==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.19.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net10.0/Scalar.AspNetCore.dll",
+        "lib/net10.0/Scalar.AspNetCore.xml",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.19.0.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
+      ]
+    },
     "System.Configuration.ConfigurationManager/9.0.18": {
       "sha512": "/1q0MHB2xKyTFRC5tk+oL3Ahi+QK0UPI6Qk6Xc5z5BW6otR2T9wwWmEW/LZX98cq7UOmu+7sZ5HNwuq61zrNtg==",
       "type": "package",
@@ -841,6 +876,7 @@
     "net10.0": [
       "Microsoft.AspNetCore.OpenApi >= 10.0.12",
       "Microsoft.Data.SqlClient >= 7.1.1",
+      "Scalar.AspNetCore >= 2.19.0",
       "System.Security.Cryptography.Pkcs >= 9.0.21"
     ]
   },
@@ -895,6 +931,10 @@
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[7.1.1, )"
+          },
+          "Scalar.AspNetCore": {
+            "target": "Package",
+            "version": "[2.19.0, )"
           },
           "System.Security.Cryptography.Pkcs": {
             "target": "Package",

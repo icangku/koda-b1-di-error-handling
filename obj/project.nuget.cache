@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UbZYGtLeJZg=",
+  "dgSpecHash": "ei4lhbTvVV4=",
   "success": true,
   "projectFilePath": "/home/alvin/Desktop/koda/net/minitask3.1/src/CrudApi/CrudApi.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,7 @@
     "/home/alvin/.nuget/packages/microsoft.identitymodel.tokens/8.16.0/microsoft.identitymodel.tokens.8.16.0.nupkg.sha512",
     "/home/alvin/.nuget/packages/microsoft.openapi/2.12.0/microsoft.openapi.2.12.0.nupkg.sha512",
     "/home/alvin/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "/home/alvin/.nuget/packages/scalar.aspnetcore/2.19.0/scalar.aspnetcore.2.19.0.nupkg.sha512",
     "/home/alvin/.nuget/packages/system.configuration.configurationmanager/9.0.18/system.configuration.configurationmanager.9.0.18.nupkg.sha512",
     "/home/alvin/.nuget/packages/system.identitymodel.tokens.jwt/8.16.0/system.identitymodel.tokens.jwt.8.16.0.nupkg.sha512",
     "/home/alvin/.nuget/packages/system.security.cryptography.pkcs/9.0.21/system.security.cryptography.pkcs.9.0.21.nupkg.sha512",

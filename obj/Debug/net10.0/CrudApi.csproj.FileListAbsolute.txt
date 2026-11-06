@@ -63,3 +63,4 @@
 /home/alvin/Desktop/koda/net/minitask3.1/src/CrudApi/obj/Debug/net10.0/CrudApi.pdb
 /home/alvin/Desktop/koda/net/minitask3.1/src/CrudApi/obj/Debug/net10.0/CrudApi.genruntimeconfig.cache
 /home/alvin/Desktop/koda/net/minitask3.1/src/CrudApi/obj/Debug/net10.0/ref/CrudApi.dll
+/home/alvin/Desktop/koda/net/minitask3.1/src/CrudApi/bin/Debug/net10.0/Scalar.AspNetCore.dll

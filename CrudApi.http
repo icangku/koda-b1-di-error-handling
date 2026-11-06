@@ -29,6 +29,17 @@ Content-Type: application/json
     "customerId": 2
 }
 
+### Upload Gambar
+POST {{baseUrl}}/api/v1/products/PR002/image
+Content-Type: multipart/form-data; boundary=CrudApi
+
+--CrudApi
+Content-Disposition: form-data; name="file"; filename="menu.jpg"
+Content-Type: image/jpeg
+
+< /home/alvin/Pictures/Taburai-Koda/menu.jpg
+--CrudApi--
+
 ### UPDATE DATA
 PUT {{baseUrl}}/api/v1/products/PR002
 Accept: application/json
